@@ -1,0 +1,38 @@
+/* This is the style of charging animation */
+.segment {
+    width: 0px;
+    height: 25px;
+    background-color: lime;
+    float:left;
+
+  }
+  
+  #battery {
+    width: 60px;
+    height: 35px;
+    border: solid rgb(119, 113, 113) 5px;
+    float: left;
+    margin-left: 70px;
+    margin-top:20px;
+
+  }
+  
+  #head {
+    width: 5px;
+    height: 15px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: rgb(119, 113, 113);
+    float: left;
+
+  }
+  
+  #progress {
+    top: 15px;
+    left: 90px;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(119, 113, 113);
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }

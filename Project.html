@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8"> 
+    <title>CITS5505 Project1_concept</title>
+    <script src="script/ajax.js" defer></script>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/structure.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+
+  </head>
+  <body>
+        <!-- Navbar Start -->
+        <!-- Use some parts from bootstrap -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light sticky-top">
+          <a href="Project.html" class="navbar-brand">
+              <h1 style="margin: auto; color: moccasin;"> Code on Demand</h1>
+          </a>
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav ms-auto">
+                  <a href="Project.html" class="nav-link" style="color:moccasin;">Home</a>
+                  <a href="Project.html" class="nav-link" style="color:moccasin;">Concept</a>
+                  <a href="history.html" class="nav-link" style="color:moccasin;">History</a>
+                  </div>
+              </div>
+              <a href="cv.html" style="background-color: rgba(122, 20, 200, 0.244);" class="py-2 px-lg-5 ">contact me<i class="fa fa-arrow-right ms-3"></i></a>
+      </nav>
+      <!-- Navbar End -->
+
+        <!-- sidebar Start -->  
+    <div class="grid-container">
+      <div class="sidebar">
+        menu
+        <nav>
+          <ul>
+            <li class="menu-item"><a href="#concept">Concept</a></li>
+            <li class="menu-item"><a href="#local_example">Local Example</a></li>
+            <li class="menu-item"><a href="#pc">Pros&Cons</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- sidebar End -->
+
+      <!-- Content Start -->
+      <div class="content">
+        <h2>What is Code On Demand?</h2>
+        <div class="row" id="concept">
+          <div class="column">
+            <p id="content1">In distributed computing, code on demand is any technology that sends executable software code from a server computer to a client computer upon request from the client's software.</p>
+            <p>The program code lies inactive on a web server until a user (client) requests a web page that contains a link to the code using the client's web browser. Upon this request, the web page and the program are transported to the user's machine using HTTP. When the page is displayed, the code is started in the browser and executes locally, inside the user's computer until it is stopped (e.g., by the user leaving the web page).<br>
+            (Wikipedia contributors. "Code on demand." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 18 Feb. 2022. Web. 12 Apr. 2022.)</p>
+            <button id="ajax1" onclick="Text()">Read More</button>
+          </div>
+          <div class="column">
+            <p id="extend1"></p>
+          </div>
+        </div>
+
+        <!-- Flow Chart Start -->
+        <div style="background-color: rgba(122, 20, 200, 0.244); border: 0;padding:0;">
+          <h2>The flow chart of COD</h2>
+          <img id="extend2" style="max-width:100%; width: 700px;height:500px;padding:0;border-radius: 20%;" src="./img/COD.jpg" alt=""> <br>
+        </div>
+        <!-- Flow Chart End -->
+
+        <!-- Example Start -->
+        <div>
+        <h2 id="local_example">Local Example</h2>
+          <div class="example_2">        
+          <div class="example_col">
+            <div>
+              <h3 class="example_name">Example1:Itype.js</h3>
+            </div>
+            <div class="example_content" style="margin-left: 140px;">
+              <img src="./img/example1.img" style="margin-left:15%;width: 70%;height:50%;" alt="">
+              <div style="height: 50px;">
+                <span id="ityped" style="font-size: 200%;background-color: bisque;color:black;margin-left:15%;"></span>
+
+              </div>
+              <script id ="itypedcode" src="https://unpkg.com/ityped@0.0.5"></script>
+              <script>
+                ityped.init('#ityped', {
+                strings:['First String', 'Second String', 'Third String', 'There is nothing to show'],
+                startDelay: 200,
+                loop: true
+                });
+                </script>
+                <p>This is a local example of COD. From the above picture we can see the local execuable code of this animation. In our local code, there is no code to implement the animation logic. Whenever this page is loaded, the code from the remote server is loaded locally and executed </p>
+                <p>Usage&Effect: <br>The src attribute of the script tag introduces ityped, as an external js which has been written on the remote server, so that we can directly call the ityped function to set and implement the animation effect of the span tag in our local code.This function allows to enter in any String, and it will be typed at the speed you've set, backspace what it's typed, and begin a new sentence for however many strings you've set.</p>
+                
+            </div>
+          </div>
+            <div class="example_col">
+              <h3 class="example_name">Example2:Codepen</h3>
+      
+              <div class="example_content" style="margin-left: 140px;">
+                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="AEbgXK" data-preview="true" data-user="sol0mka" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <p>This is a typical example of COD. I didn't write any code to draw an interactive phone screen, but when this page is loaded, the code (including html, CSS and js) from remote server will be sent and executed locally.<br>It will be executed until this page is closed.</p>
+                <p>Usage&Effect: <br>When you click the "Run Pen" button, an interactive phone interface appears. If you scroll, different food labels will be displayed; When you click on one of them, a spring animation will be triggered and displayed.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Example End -->
+
+        <!-- Pros&Cons Start -->
+        <div class="p_c">
+          <h2 id="pc" style="background-color:rgba(122, 20, 200, 0.244);grid-column: span 2 / auto;">Pros And Cons of COD</h2>
+          <div>
+            <h3>Pros</h3>
+            <p>There are three main advantages.</p>
+            <ol>
+              <li>The actual implementation does not require significant engineering difficulties. <br>From a mere execution standpoint, the essence of the code on demand paradigm can be supported by an interpreter equipped with a networked dynamic loader. This technology is well-understood, and today well-supported by mainstream platforms (e.g., Java and .NET).</li>
+              <li>It intrinsically fosters good load balancing properties. <br>Indeed, client-server places the burden for computation entirely on the server, which holds the resources and know-how necessary to the service.</li>
+              <li>Extensibility and configurability.<br> Code-on-demand includes the ability to add features to a deployed client, which provides for improved extensibility and configurability.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Cons</h3>
+            <p>There are three main disadvantages.</p>
+            <ol>
+              <li>Simplicity.<br>It requires to manage the evaluation environment, which will reduce the simplicity.</li>
+              <li>Restriction.<br>Because code ultimately runs on the client side, its efficiency is limited by the client side</li>
+              <li>Visibility.<br>The lack of visibility due to the server sending code instead of simple data. Lack of visibility leads to obvious deployment problems if the client cannot trust the servers.</li>
+            </ol>
+          </div>
+          
+        </div>
+        <!-- Pros&Cons End -->
+
+        <!-- This is an extra section of Ajax -->
+        <div id="Relaxing">
+          <h3 style="text-align:center;">Relaxing Time!</h3>
+          <button id="#ajax2" onclick="Imagedog()" style="margin-left: 40%;">Click here to see what will happen</button><br>
+          <img id="dog" src="./img/dog1.gif" alt="" style="margin-left: 35%;width: 30%;height:80%">
+        </div>
+      </div>
+      
+
+    </div>
+    <!-- </div> -->
+    <!-- Content End -->
+
+        
+  </body>
+</html>

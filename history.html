@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <title>CITS5505 Project1_history</title>
+        <script src="script/battery.js" defer></script>
+        <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/structure.css">
+        <link rel="stylesheet" type="text/css" href="css/content.css">
+        <link rel="shortcut icon" href="#" />
+
+    </head>
+    <body>
+        <!-- Navbar Start -->
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light sticky-top">
+          <a href="Project.html" class="navbar-brand">
+              <h1 style="margin: auto; color: moccasin;"> Code on Demand</h1>
+          </a>
+          <div class="collapse navbar-collapse">
+              <div class="navbar-nav ms-auto">
+                  <a href="Project.html" class="nav-link" style="color:moccasin;">Home</a>
+                  <a href="Project.html" class="nav-link" style="color:moccasin;">Concept</a>
+                  <a href="history.html" class="nav-link" style="color:moccasin;">History</a>
+                  </div>
+              </div>
+              <a href="cv.html" style="background-color: rgba(122, 20, 200, 0.244);" class="py-3 px-lg-5 ">contact me<i class="fa fa-arrow-right ms-3"></i></a>
+      </nav>
+        <!-- Navbar End --> 
+        <div class="grid-container">
+            <!-- Sidebar Start -->
+            <div class="sidebar">
+                menu
+                <nav>
+                  <ul>
+                    <li class="menu-item"><a href="#introduction">Introduction</a></li>
+                    <li class="menu-item"><a href="#development">History of development</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Sidebar End -->
+
+              <!-- Content Start -->
+              <div class="content">
+                  <div id="introduction">
+                    <h2>Video Introduction</h2>
+                    <p style="font-size:20px ;text-align: center;">Before we dive into the history of Code on Demand, let's review its concept with a video.</p>
+                    <iframe style="margin-left: 18%;" width="857" height="485" src="https://www.youtube.com/embed/0CKRkvFN7jg" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  
+                  <!-- History Start -->
+                  <div id="development">
+                    <h2>Relevant Web Technology Example And Development</h2>
+                      <div class="example">
+                        <div class="example_row" style="height:1200px;">
+                          <p style="width:8%;">Step1:<br> Java applets<br> 1995</p>
+                          <div class="example_content">
+                            <!-- Insert video -->
+                           <iframe  src="https://www.youtube.com/embed/HLwYI9PeH1g" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height:15%;width:40%;"></iframe>
+                            <p>Since the tag &lsaquo;applet&rsaquo; has no longer supported Html5, so here I use a video to show how it works in html. </p>
+                              <p>An applet is a small application that supports and enhances the hosting web application. Commonly created using the Java programming language, applets run within a web browser. Applets can either be small enhancing programs or stand alone as complete applications in themselves, since they have access to the complete Java application program interface (API).Applets are usually embedded within the syntax of the hosting web page, which loads on request by the user. Hypertext Markup Language (HTML) code is received by the web browser and translated into dynamic, graphical, and informative pages we see displayed on our devices. Web pages that contain dynamic content such as animation and sound effects, making the user's experience more interesting, are the result of these small programs called applets. </p>
+                            <p>Here is another example of applet in Html from <a href="https://zh.wikipedia.org/wiki/Java_applet"  target="_blank">'Wikipedia'</a>. The first picture shows the code of a java applet that can display "Hello World".</p>
+                            <img src="./img/applet1.png" style="height:300px;width:50%;" alt="picture can not be loaded">
+                            <p>The above code is compiled as "HelloWorld.class" that can be used by the following html file. </p>
+                            <img src="./img/applet2.png" style="height:200px;width:50%;" alt="picture can not be loaded">
+                            <p>Why Java Applet is dead?<br></p>
+                            <ul>
+                              <li>Java applets would depend on a Java Runtime Environment (JRE), a complex and heavy-weight software package. </li>
+                              <li>Mobile browsers on iOS or Android, never run Java applets at all</li>
+                              <li>There was no standard to make the content of applets available to screen readers. </li>
+                              <li>As with any client-side scripting, security restrictions made it difficult or even impossible for some untrusted applets to achieve their desired goals.</li>
+                              <li>Alternative technologies exist (for example, WebAssembly[33] and JavaScript) that satisfy all or more of the scope of what was possible with an applet.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="example_row">
+                          <p style="width:8%;">Step2: <br>JavaScript<br>1995</p>
+                          <div class="example_content">
+                            <!-- Charging animation -->
+                              <div id="battery">
+                                <div class="segment" id="s1"></div>
+                                <div class="segment" id="s2"></div>
+                                <div class="segment" id ="s3"></div>
+                              </div>
+                                <div id="head" ></div>
+                                <div id="progress">power</div>
+                              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" referrerpolicy="no-referrer"></script>
+                              <button onclick="battery()">click</button>here to charge the battery
+                              <p>Javascript loads executable code from a remote server upon the request of the client. In this case, the anime.js code is loaded from a remote server at the request of the page to animate it. When the battery label reaches 100%, the animation stops automatically</p>
+                              <p>JavaScript is a kind of high-level scripting language belonging to the network. It has been widely used in the development of Web applications and it is often used to add various dynamic functions to Web pages and provide users with more smooth and beautiful effects. JavaScript scripts are often embedded in HTML to achieve their own functionality</p>
+                              Operational mode:
+                              <ul>
+                                <li>It is an interpreted scripting language (code is not precompiled)</li>
+                                <li>It is used to add interactive behavior to HTML (standard Common Markup Language) pages.</li>
+                                <li>It can be embedded directly into an HTML page, but written as a separate JS file facilitates the separation of structure and behavior</li>
+                                <li>Cross-platform features that with the support of most browsers, it can run on multiple platforms (Windows, Linux, Mac, Android, iOS, etc.) </li>
+                                <li>JavaScript like other script languages, has its own basic data types, expressions and arithmetic operators, and basic programming frameworks for programs</li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="example_row">
+                          <p style="width:8%;">Step3: <br>Adobe Flash Player<br>2005</p>
+                          
+                          <div class="example_content"> 
+                           <img src="./img/adobe.jpg" style="height:120px; width: 120px;" alt="pic cannot be loaded">
+                           <p>What is Adobe Flash Player</p>
+                           <p>Adobe Flash Player (known in Internet Explorer, Firefox, and Google Chrome as Shockwave Flash)[10] is freeware computer software for viewing multimedia contents, executing rich Internet applications, and streaming audio and video content created on the Adobe Flash platform. It can run from a web browser as a browser plug-in or independently on supported devices.<br> It becomes unavailable because of its accessibility and usability, privacy, security, vendor lock-in and so on</p>
+                            <a href="https://en.wikipedia.org/wiki/Adobe_Flash_Player#:~:text=Flash%20Player%20is%20capable%20of,or%20on%20supported%20mobile%20devices." target="_blank">To learn more</a>
+                            <p>How COD is implemented?<br>Adobe Flash Player can be developed in the ActionScript language, which generates a swf file whose code can be called remotely by js.</p>
+                          </div>
+                        </div>
+                        <div class="example_row">
+                          <p style="width:8%;">Step4: <br>WebAssembly<br>2017</p>
+                          <div class="example_content"> 
+                                <!-- <button id="ajax" onclick="result_1()">Click here to see what will happen</button><br>
+                                <img id="s2img" style="height:120px; width: 120px;"> -->
+                            <iframe  src="https://www.youtube.com/embed/cbB3QEwWMlA" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           <p>How COD is implemented?<br>WebAssembly works by compiling static languages such as C,C++, and Rust into wasm binary files that can be run by the browser. When the browser loads the wasm file, it compiles it into native code and runs it.</p>
+                            <p>The pros of WebAssembly</p>
+                           <ul>
+                             <li>Efficient and fast
+                              <button data-bs-toggle="popover" data-bs-content="The Wasm stack machine is designed to be encoded in a size- and load-time-efficient binary format. WebAssembly aims to execute at native speed by taking advantage of common hardware capabilities available on a wide range of platforms.">unfold</button>
+                             </li>
+                             <li>Safe
+                               <button data-bs-toggle="popover" data-bs-content="WebAssembly describes a memory-safe, sandboxed execution environment that may even be implemented inside existing JavaScript virtual machines. When embedded in the web, WebAssembly will enforce the same-origin and permissions security policies of the browser.">unfold</button>
+                             </li>
+                             <li>Open and debuggable
+                               <button data-bs-toggle="popover" data-bs-content="WebAssembly is designed to be pretty-printed in a textual format for debugging, testing, experimenting, optimizing, learning, teaching, and writing programs by hand. The textual format will be used when viewing the source of Wasm modules on the web.">unfold</button>
+                             </li>
+                             <li>Part of the open web platform
+                               <button data-bs-toggle="popover" data-bs-content="WebAssembly is designed to maintain the versionless, feature-tested, and backwards-compatible nature of the web. WebAssembly modules will be able to call into and out of the JavaScript context and access browser functionality through the same Web APIs accessible from JavaScript. WebAssembly also supports non-web embeddings.">unfold</button>
+                             </li>
+                           </ul>
+                           <!-- The use of popover and its trigger -->
+                           <script>
+                             var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                                return new bootstrap.Popover(popoverTriggerEl)
+                              })
+                           </script>
+                                       
+              
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <!-- History End -->
+                  
+              </div>
+              <!-- Content End -->
+        </div>
+    </body>
+</html>

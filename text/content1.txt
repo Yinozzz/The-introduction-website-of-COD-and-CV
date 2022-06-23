@@ -1,0 +1,2 @@
+The implementation of this "Read More" functionality is ajax, which is Asynchronous Javascript And XML. Ajax is the equivalent of adding an intermediate layer (the Ajax engine) between the user and the server, making user actions and server responses asynchronous.
+How ajax affect Code on Demand: Because Ajax can make asynchronous requests, it can be used to make asynchronous requests to load remote server code, increasing load efficiency.
